@@ -3,13 +3,127 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>The Parking Spaces - 008</title>
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/option1.css">
-	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<title>The Parking Spaces | 008</title>
+	<link rel="stylesheet" type="text/css" href="css/generic.css">
+	<link rel="stylesheet" type="text/css" href="css/image_modal.css">
+	<link rel="stylesheet" type="text/css" href="css/layout.css">
 	<link rel="stylesheet" type="text/css" href="css/audio.css">
+	<link rel="stylesheet" type="text/css" href="css/008.css">
 </head>
 <body>
-	<h1>008</h1>
+	<header>
+		<div class='page_title'>
+			<span class='number'>
+				<h1>008</h1>
+				<span class='author'>by Wombat</span>
+			</span>
+		</div>
+		<nav id="main_nav">
+			<div id="nav_link_container">
+				<a class='nav_link listen' href="#listen">
+					Listen
+				</a>
+				<a class='nav_link read' href="#read">Read</a>
+				<a class='nav_link artists' href="#artists">about</a>
+			</div>
+		</nav>
+
+		<div id='map_location_wrapper'>
+			<a href='https://goo.gl/maps/1FVXJU8tsTcya1Wg6' target='blank' class='map_link' id='map_location' tabindex='1'>
+				<div class='title_author_container'>
+					<span class='title'>Clock Tower Parking Ramp entrance on Linn and Iowa St.</span>
+					<span class='address'>10 S Linn St</span>
+					<span class='coordinates'>41.660945, -91.531572</span>
+				</div>
+			</a>
+		</div>
+
+		<a href='https://theparkingspaces.com#map' id='back_link'>
+			<svg version="1.1" id="back_arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				 viewBox="0 0 305.7 305.7" style="enable-background:new 0 0 305.7 305.7;" xml:space="preserve">
+				<path d="M152.2,179.2h136.7c5.8,0,10.6-4.7,10.6-10.6v-39.5c0-5.8-4.7-10.6-10.6-10.6H152.1c-6.3,0-11.2-5.5-10.5-11.8l3.2-28.3
+				c1-8.7-8.5-14.8-16-10.2l-117.3,71c-6.8,4.1-6.8,14,0,18.1l117.3,70.9c7.5,4.5,17-1.5,16-10.2l-3-27
+				C141,184.7,145.9,179.2,152.2,179.2z"/>
+			</svg>
+			<div>View Other Spaces</div>
+		</a>
+		<div id='footer_info'>
+			 Space 8. Here we are at the Tower Parking Ramp and right in front of you, you might notice the weights and chains of its big clock. It is marking the time. The time of right now. The music you are about to hear is special. It is linked to a very specific time and space, different from the ones you're in now. It was completely improvised. What you are hearing will never be performed again. As you listen we invite you to explore this parking ramp, go up its elevator, look around its structure, or walk around the street, find a bench. As you move or sit and listen, notice how the space you currently inhabit can overlap with the unique moment this improvised musical piece emerged…
+		</div>
+	</header>
+
+	<div id='loading_container'>
+		<img id='loading_image' src="assets/illustrations/008-01.svg">
+		<span id='loading_message'>loading...</div>
+	</div>
+
+	<main>
+		<section id="listen">
+			<h2>Listen</h2>
+
+			<div id='headphone_notification'>
+				<img src="assets/headphones.svg">
+				This piece is best experienced using headphones
+			</div>
+			
+			<div class="audio_container" id='main_audio'>
+				<div class='player'>
+					<audio class="audio_track">
+						<source src="tracks/wombat.mp3" type="audio/mpeg">
+					</audio>
+				</div>
+			</div>
+		</section>
+
+		<section id="read" class='large_paragraph'>
+			<h2>Read</h2>
+			<div class='audio_container print_download_container'>
+				<a id='print_download' href="">
+					<img src="assets/print_download.svg">
+					<h3 class="audio_heading">Download PDF</h3>
+				</a>
+			</div>
+			<div class='audio_container print_download_container'>
+				<a id='print_download' href="">
+					<img src="assets/print_download.svg">
+					<h3 class="audio_heading">Download DOCX</h3>
+				</a>
+			</div>
+		</section>
+		
+		<section id="artists" class="">
+			<h2>About</h2>
+			<div class="content_container content_with_image">
+					<div class='image_link author_image'>
+						<button class="open_image" id="team_image_button">
+							<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 133.57 336.86"><defs></defs><circle class="figure_button" cx="66.79" cy="37.91" r="37.91"/><path class="cls-1" d="M54.23,81.47H79.34a54.23,54.23,0,0,1,54.23,54.23v74a12.09,12.09,0,0,1-12.09,12.09H12.09A12.09,12.09,0,0,1,0,209.66v-74A54.23,54.23,0,0,1,54.23,81.47Z"/><rect class="cls-1" x="28.88" y="178.57" width="75.82" height="158.29" rx="11.51"/></svg>
+						</button>
+						<div class="image_container">
+							<div class="image_inner_container">
+								<img src="assets/img/photo.jpg" alt="Needs description">
+							</div>
+							<span class="description">
+							<button class='close_modal'>Close</button>
+							Needs description</span>
+						</div>	
+					</div>
+					<div>
+						Improvisers <span class='artist_name'>Justin K. Comer</span> (saxophones), <span class='artist_name'>Carlos Cotallo Solares</span> (guitar/electronics), and <span class='artist_name'>Will Yager</span> (double bass) formed Wombat in October 2017. Together they explore new sonic textures and instrumental techniques in concert halls, coffee shops, backyards, and basements. Though the performances are never planned beforehand, the trio's music is influenced by their collective experience with contemporary music, noise, jazz, metal, and drone. Recent appearances include Oh My Ears Festival (Phoenix, AZ), MOXsonic (Warrensburg, MO), the Maximum Ames festival (Ames, IA), Composers' Workshops at the University of Iowa, and the Feed Me Weird Things and iHearIC concert series.
+					</div>
+			</div>
+		</section>
+	</main>
+
+	<img class='illustration' id='illustration1' src="assets/illustrations/008-03.svg">
+	<img class='illustration' id='illustration2' src="assets/illustrations/008-02.svg">
+
+	<footer>
+		<span id='site_credits'>site by rahul, rush, & sayuri</span>
+	</footer>
+
+	<script type="text/javascript" src="js/image.js"></script>
+	<script type="text/javascript" src="js/scroll_handler.js"></script>
+	<script type="text/javascript" src="js/green-audio.js"></script>
+	<script type="text/javascript" src="js/audio.js"></script>
 </body>
 </html>
